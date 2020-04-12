@@ -45,25 +45,3 @@ function saveCars() {
 }
 
 
-
-
-
-// const docRef = firestore.collection("Cars")
-// docRef.get().then(function (doc) {
-//     if (doc.exists) {
-//         const myData = doc.data()
-//         console.log(myData)
-//         for (key in myData) {
-//             let tag = document.createElement("p")
-//             let text = document.createTextNode(`${key}: ${myData[key]}`)
-//             tag.appendChild(text)
-//             console.log(tag)
-//             let element = document.getElementById("carInfo")
-//             element.appendChild(tag)
-//         }
-//     } else {
-//         console.log("No such document!");
-//     }
-// }).catch(function (error) {
-//     console.log("Error getting document:", error);
-// });

@@ -15,10 +15,8 @@ firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore();
 
 
-
-// const docRef = firestore.collection("Cars")
 firestore.collection('Cars').get().then(function (doc) {
-    // if (doc.exists) {
+
     doc.forEach(car => {
         car = car.data();
         let table = document.getElementById('table');
@@ -52,19 +50,7 @@ firestore.collection('Cars').get().then(function (doc) {
 
         table.appendChild(row);
     })
-    // const myData = doc.data()
-    // console.log(myData)
-    // for (key in myData) {
-    //     let tag = document.createElement("p")
-    //     let text = document.createTextNode(`${key}: ${myData[key]}`)
-    //     tag.appendChild(text)
-    //     console.log(tag)
-    //     let element = document.getElementById("bookInfo")
-    //     element.appendChild(tag)
-    // }
-    // } else {
-    //     console.log("No such document!");
-    // }
+
 }).catch(function (error) {
     console.log("Error getting document:", error);
 });

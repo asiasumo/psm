@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div id="bookInfo">
+        <tr>
+            <td>Tytuł:</td>
+            <td><input type="text" id="tytul"></td>
+        </tr>
+        <tr>
+            <td>Autor:</td>
+            <td><input type="text" id="autor"></td>
+        </tr>
+        <tr>
+            <td>ISBN:</td>
+            <td><input type="text" id="isbn"></td>
+        </tr>
+        <tr>
+            <td>Rok wydania:</td>
+            <td><input type="text" id="rok"></td>
+        </tr>
+        <tr>
+            <td>Gatunek literacki:</td>
+            <td><input type="text" id="gatunek"></td>
+        </tr>
+        <tr>
+            <br>
+            <td colspan="2" align="center"><br>
+                <button id="button" value="Wyślij">
+            </td>
+        </tr>
+    </div>
+    <div id="books">
+
+    </div>
+    <script src="./anybook.js"></script>
+</body>
+
+</html>
